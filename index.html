@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Westbridge Consulting</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root { --brand:#002f63; --brand-dark:#00224a; --brand-light:#eef5ff; }
+    body { color:#10233f; }
+    .bg-brand { background:var(--brand); }
+    .text-brand { color:var(--brand); }
+    .btn-brand { background:var(--brand); color:#fff; border-color:var(--brand); }
+    .btn-brand:hover { background:var(--brand-dark); color:#fff; border-color:var(--brand-dark); }
+    .hero { background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.92) 36%,rgba(255,255,255,.2) 62%), url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1800&q=80') center/cover; }
+    .icon-circle { width:64px; height:64px; display:grid; place-items:center; background:var(--brand-light); border-radius:50%; font-size:2rem; color:#1b66d2; }
+    .card { border-color:#dfe7f2; }
+    .link-brand { color:#1b66d2; text-decoration:none; font-weight:600; }
+    .stat-divider { border-left:1px solid rgba(255,255,255,.22); }
+    @media (max-width: 767px) { .hero { background:linear-gradient(rgba(255,255,255,.93),rgba(255,255,255,.93)), url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1800&q=80') center/cover; } .stat-divider { border-left:0; border-top:1px solid rgba(255,255,255,.22); } }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-brand" href="#">
+        <span class="display-6 lh-1 fw-bold">W</span>
+        <span class="lh-sm">Westbridge<br>Consulting</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clients">Our Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#jobs">Jobs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-brand px-4" href="#contact">Book a Consultation</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6 py-4">
+          <h1 class="display-5 fw-bold text-brand">IT Recruitment &<br>Technology Consulting</h1>
+          <h2 class="h2 fw-normal mb-3">for Growing UK Businesses</h2>
+          <p class="lead mb-4">We connect exceptional IT talent with ambitious organisations and deliver technology solutions that scale.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a class="btn btn-brand px-4 py-3" href="#contact">Book a Consultation</a>
+            <a class="btn btn-outline-primary px-4 py-3" href="#jobs">View Open Roles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold text-brand">Our Services</h2>
+          <p>Delivering tailored IT solutions and talent to drive your business forward.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-4 shadow-sm">
+              <div class="icon-circle mb-3"><i class="bi bi-people"></i></div>
+              <h3 class="h5 fw-bold">IT Recruitment</h3>
+              <hr class="border-primary border-2 opacity-100 w-25">
+              <p>Permanent, contract and interim IT recruitment across the UK. We find the right people for your business.</p>
+              <a class="link-brand mt-auto" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 shadow-sm">
+              <div class="icon-circle mb-3"><i class="bi bi-cloud"></i></div>
+              <h3 class="h5 fw-bold">IT Consulting</h3>
+              <hr class="border-primary border-2 opacity-100 w-25">
+              <p>Expert advice and hands-on delivery across infrastructure, cloud, security and digital transformation.</p>
+              <a class="link-brand mt-auto" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 shadow-sm">
+              <div class="icon-circle mb-3"><i class="bi bi-shield-check"></i></div>
+              <h3 class="h5 fw-bold">Disaster Recovery</h3>
+              <hr class="border-primary border-2 opacity-100 w-25">
+              <p>Robust business continuity and disaster recovery solutions to keep you resilient and protected.</p>
+              <a class="link-brand mt-auto" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-brand text-white py-4">
+      <div class="container">
+        <div class="row g-4 text-center text-md-start">
+          <div class="col-md-3"><div class="pe-md-4"><div class="h1 fw-bold"><i class="bi bi-trophy me-2 text-primary"></i>15+</div><strong>Years Experience</strong><p class="small mb-0">Supporting UK businesses since 2008.</p></div></div>
+          <div class="col-md-3 stat-divider"><div class="px-md-4"><div class="h1 fw-bold"><i class="bi bi-people-fill me-2 text-primary"></i>500+</div><strong>Successful Placements</strong><p class="small mb-0">Across a wide range of IT disciplines.</p></div></div>
+          <div class="col-md-3 stat-divider"><div class="px-md-4"><div class="h1 fw-bold"><i class="bi bi-geo-alt-fill me-2 text-primary"></i>UK-Wide</div><strong>Coverage</strong><p class="small mb-0">Local expertise with national reach.</p></div></div>
+          <div class="col-md-3 stat-divider"><div class="ps-md-4"><div class="h1 fw-bold"><i class="bi bi-graph-up-arrow me-2 text-primary"></i>95%</div><strong>Client Retention</strong><p class="small mb-0">Long-term partnerships built on trust.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-bold text-brand">Client Success Stories</h2>
+        <p>Real results for real organisations.</p>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex gap-3"><div class="icon-circle"><i class="bi bi-bank"></i></div><div><h3 class="h6 fw-bold">Financial Services Client</h3><p>We helped a leading financial services firm reduce hiring time by 40% through targeted technical recruitment and market mapping.</p><a class="link-brand" href="#">Read the case study <i class="bi bi-arrow-right"></i></a></div></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex gap-3"><div class="icon-circle"><i class="bi bi-heart-pulse"></i></div><div><h3 class="h6 fw-bold">Healthcare Provider</h3><p>We designed and implemented a resilient disaster recovery infrastructure, ensuring business continuity and data protection.</p><a class="link-brand" href="#">Read the case study <i class="bi bi-arrow-right"></i></a></div></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card h-100 p-4">
+              <div class="display-5 text-primary lh-1">“</div>
+              <p>Westbridge Consulting took the time to understand our business and delivered exactly what we needed. A trusted partner we rely on.</p>
+              <strong>— CIO, Healthcare Organisation</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <h2 class="fw-bold text-brand">Let's Work Together</h2>
+            <p>Whether you're hiring top IT talent or need expert advice on your next project, we'd love to hear from you.</p>
+            <p><i class="bi bi-envelope-fill text-brand me-2"></i> enquiries@westbridgeconsulting.com</p>
+            <p><i class="bi bi-telephone-fill text-brand me-2"></i> +44 (0)20 1234 5678</p>
+            <p><i class="bi bi-geo-alt-fill text-brand me-2"></i> Westbridge House, 123 Cannon Street,<br>London EC4N 6AS</p>
+            <p><i class="bi bi-linkedin text-brand me-2"></i> Follow us on LinkedIn</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="card p-4 shadow-sm">
+              <h3 class="h5 fw-bold">Send us a message</h3>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6"><input class="form-control" placeholder="Full Name"></div>
+                  <div class="col-md-6"><input class="form-control" placeholder="Work Email"></div>
+                  <div class="col-12"><input class="form-control" placeholder="Company"></div>
+                  <div class="col-12"><textarea class="form-control" rows="5" placeholder="Your Message"></textarea></div>
+                  <div class="col-12"><button class="btn btn-brand w-100" type="submit">Send Message</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand text-white py-4">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-3 fw-bold fs-5">W Westbridge<br>Consulting</div>
+        <div class="col-md-6">
+          <div class="d-flex flex-wrap gap-3 justify-content-md-center small">
+            <a class="text-white text-decoration-none" href="#services">Services</a>
+            <a class="text-white text-decoration-none" href="#about">About Us</a>
+            <a class="text-white text-decoration-none" href="#clients">Our Clients</a>
+            <a class="text-white text-decoration-none" href="#resources">Resources</a>
+            <a class="text-white text-decoration-none" href="#jobs">Jobs</a>
+            <a class="text-white text-decoration-none" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="col-md-3 small text-md-end">© 2024 Westbridge Consulting Ltd.<br>All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
